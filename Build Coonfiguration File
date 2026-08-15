@@ -1,0 +1,41 @@
+# Quantum Jitter Labyrinth v2.0
+
+A reverse-engineering CTF challenge and anti-analysis demonstration featuring hardware-level entropy checks, anti-debugging mechanisms, and a branchless execution pipeline.
+
+## Requirements
+
+### System Requirements
+* **OS:** Windows 10 / 11 (64-bit)
+* **CPU:** x86-64 CPU supporting `CPUID` and `RDRAND` instructions
+
+### Development Toolchain
+* **Compiler:** MSVC (Visual Studio 2019 or later recommended)
+* **Build System:** CMake 3.16 or higher
+* **C++ Standard:** C++20
+
+## Features & Architecture
+
+1. **Environmental Barrier:** Detects virtualization (Hypervisors/VMs) via `CPUID`.
+2. **Spatial Barrier:** Code section hash checking for anti-tampering and instruction patches.
+3. **Tripartite Mutual Audit:** Cross-verifies Software Time (`QPC`), CPU Clock (`TSC`), and Hardware Thermal Noise (`RDRAND`).
+4. **Anti-Debugging:** Detects frame delays (>50ms) caused by single-step execution and triggers zeroization.
+5. **Markov Cloud:** Dynamic state drifting using hardware jitter and Markov chains.
+6. **Branchless Jump Table:** Eliminates conditional branching (`if`) for security-critical triggers.
+
+## How to Build and Run
+
+### Using CMake (Command Line)
+
+```cmd
+# 1. Clone the repository
+git clone [https://github.com/YOUR_USERNAME/QuantumJitterLabyrinth.git](https://github.com/YOUR_USERNAME/QuantumJitterLabyrinth.git)
+cd QuantumJitterLabyrinth
+
+# 2. Generate build files
+cmake -B build
+
+# 3. Build the executable in Release mode
+cmake --build build --config Release
+
+# 4. Run the program
+.\build\Release\QuantumJitterLabyrinth.exe
