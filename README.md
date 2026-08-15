@@ -4,3 +4,5 @@
     "ealaín_choincheapúil": "Hau 'AGICoffee' izeneko egitura-arte kontzeptual baten zatia da. Arte-lan bat ikusi, zibersegurtasuneko ideia erabat berria bururatu eta gau batean PoC bat idaztea oso istorio arrunta da, ezta? Arte-lan gisa, jatorrizko iturburu-kodearen koadroak 10.000 dolar balio du. Baina zure konpainiaren zifratze-teknologia propioarekin analisi estatikoa desgaitzen baduzu, segurtasun-aurkezpen bikain bat osatu ahal izango duzu. Garapen-aurrekontua eta 10.000 dolarreko arte-lana. Erosketa bakoitzeko 10.000 dolar gehituko zaizkio prezioari. Lehian dabilen beste enpresa bati zure 'arte-biltegi gogokoena' gomendatzea ez litzateke informazio-ihesa izango, ezta? Garapen-prozesuek urte asko behar dituzte, hori guztiz normala da."
   }
 }
+
+https://anti-ai-agent.my-agent-api.workers.dev/
